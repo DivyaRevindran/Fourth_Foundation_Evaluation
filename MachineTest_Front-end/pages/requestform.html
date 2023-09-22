@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel requestor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/requestform.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script>window.history.forward()</script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <a class="navbar-brand" href="#">Travel Requstor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="#">Form <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="employeeview.html">View Request</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <button id="btnLogout" class="btn btn-light">Logout</button>
+            </ul>
+        </div>
+    </nav>
+    <!--Request Form-->
+    <div class="container customContainer">
+        <div class="text-center">
+            <h3>Request Form</h3>
+        </div>
+        <hr>
+
+        <form id="frmTravelRequest">
+            <div class="row">
+                <!--Employee Id-->
+                <div class="form-group col">
+                    <label for="txtEmpId"><b>Employee Id</b></label>
+                    <input type="text" id="txtEmpId" name="txtEmpId" class="form-control" placeholder="Employee ID">
+                    <span id="empIdError" class="error"></span>
+                </div>
+                <!--Employee Name-->
+                <div class="form-group col">
+                    <label for="txtEmpName"><b>Employee Name</b></label>
+                    <input type="text" id="txtEmpName" name="txtEmpName" class="form-control"
+                        placeholder="Employee Name">
+                    <span id="nameError" class="error"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--Project-->
+                <div class="form-group col">
+                    <label for="txtProject"><b>Project</b></label>
+                    <input type="text" id="txtProject" name="txtProject" class="form-control" placeholder="Project">
+                    <span id="projectError" class="error"></span>
+                </div>
+                <!--Cause of travel-->
+                <div class="form-group col">
+                    <label for="txtTravelCause"><b>Cause for Travel</b></label>
+                    <input type="text" id="txtTravelCause" name="txtTravelCause" class="form-control"
+                        placeholder="Cause for Travel">
+                    <span id="causeError" class="error"></span>
+                </div>
+            </div>
+            <div class="row">
+                <!--Source-->
+                <div class="form-group col">
+                    <label for="txtSource"><b>Source</b></label>
+                    <input type="text" id="txtSource" name="txtSource" class="form-control" placeholder="Source">
+                    <span id="sourceError" class="error"></span>
+                </div>
+                <!--Destination-->
+                <div class="form-group col">
+                    <label for="txtDestination"><b>Destination</b></label>
+                    <input type="text" id="txtDestination" name="txtDestination" class="form-control"
+                        placeholder="Destination">
+                    <span id="destinationError" class="error"></span>
+                </div>
+            </div>
+            <div class="row">
+                <!--From Date-->
+                <div class="form-group col">
+                    <label for="dteFromDate"><b>From Date</b></label>
+                    <input type="date" id="dteFromDate" name="dteFromDate" class="form-control">
+                    <span id="fromDateError" class="error"></span>
+                </div>
+                <!--No of Days-->
+                <div class="form-group col">
+                    <label for="noOfDays"><b>No of Days</b></label>
+                    <select id="noOfDays" name="noOfDays" class="form-control"></select>
+
+                    <span id="noOfDaysError" class="error"></span>
+                </div>
+                <!--Mode of Travel-->
+                <div class="form-group col">
+                    <label for="txtTravelMode"><b>Mode Of Travel</b></label>
+                    <input type="text" id="txtTravelMode" name="txtTravelMode" class="form-control"
+                        placeholder="Mode of Travel">
+                    <span id="modeError" class="error"></span>
+                </div>
+            </div>
+            <!--Submit-->
+            <button type="submit" class="btn btn-primary ">Submit</button>
+            <!--reset-->
+
+            <button type="reset" class="btn btn-danger btnRight" >Reset</button>
+            <script src="/js/requestform.js"></script>
+
+</body>
+
+</html>

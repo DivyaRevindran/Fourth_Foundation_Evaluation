@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script>window.history.forward()</script>
+    <title>Travel Requstor</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <a class="navbar-brand" href="#">Travel Requestor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="#">Pending <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="#">All<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="#">Approved<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="#">Rejected<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="#">Onhold<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <button id="btnLogout" class="btn btn-light">Logout</button>
+            </ul>
+
+        </div>
+    </nav>
+    <!--Table which contains the details of requests submitted by employees-->
+    <div class="container">
+        <div class="mt-5">
+            <table class="table table-bordered">
+                <!--Table header-->
+                <thead>
+                    <td>Employee Name </td>
+                    <td>Destination</td>
+                    <td>Priority</td>
+                    <td>View Details</td>
+                    <td>Action</td>
+                </thead>
+                <!--row-->
+                <tr>
+                    <td>Donald</td>
+                    <td>Las Vegas</td>
+                    <td>Critical</td>
+                    <td><a href="travelDetails.html">View Details</a></td>
+                    <td>
+                        <select>
+                            <option value="Approve">Approve</option>
+                            <option value="Reject">Reject</option>
+                            <option value="on-hold">on-hold</option>
+                        </select>
+                    </td>
+                </tr>
+                <!--row-->
+                <tr>
+                    <td>Aswathy/td>
+                    <td>Delhi</td>
+                    <td>Normal</td>
+                    <td><a href="">View Details</a></td>
+                    <td>
+                        <select>
+                            <option value="Approve">Approve</option>
+                            <option value="Reject">Reject</option>
+                            <option value="on-hold">on-hold</option>
+                        </select>
+                    </td>
+                </tr>
+                <!--row-->
+                <tr>
+                    <td>Franco</td>
+                    <td>Kochi</td>
+                    <td>Normal</td>
+                    <td><a href="">View Details</a></td>
+                    <td>
+                        <select>
+                            <option value="Approve">Approve</option>
+                            <option value="Reject">Reject</option>
+                            <option value="on-hold">on-hold</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <script src="/js/adminview.js"></script>
+</body>
+
+</html>

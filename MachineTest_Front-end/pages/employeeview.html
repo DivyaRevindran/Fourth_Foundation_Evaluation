@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Requestor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+        <script>window.history.forward()</script>
+        <link rel="stylesheet" href="/css/employeeView.css">
+    
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <a class="navbar-brand" href="#">Travel Requstor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="requestform.html">Form <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        View
+                    </a>
+                    <div class="dropdown-menu bg-success">
+                        <a class="dropdown-item text-white" href="travelDetails.html">All</a>
+                        <a class="dropdown-item text-white" href="#">Critical</a>
+                        <a class="dropdown-item text-white" href="#">Normal</a>
+                        <a class="dropdown-item text-white" href="#">Rejected</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <button id="btnLogout" class="btn btn-light">Logout</button>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!--Table to view the details-->
+    <div class="container">
+        <div class="mt-5">
+            <table class="table table-bordered">
+                <!--Table header-->
+                <thead>
+                    <td>Employee Name </td>
+                    <td>Destination</td>
+                    <td>Priority</td>
+                    <td>View Details</td>
+                </thead>
+                <!--row-->
+                <tr class="table-warning">
+                    <td>Donald</td>
+                    <td>Las Vegas</td>
+                    <td>Critical</td>
+                    <td><a href="">View Details</a></td>
+                </tr>
+                <!--row-->
+                <tr class="table-success">
+                    <td>Aswathy</td>
+                    <td>Delhi</td>
+                    <td>Normal</td>
+                    <td><a href="">View Details</a></td>
+                </tr>
+                <!--row-->
+                <tr class="table-danger">
+                    <td>Franco</td>
+                    <td>Kochi</td>
+                    <td>Normal</td>
+                    <td><a href="">View Details</a></td>
+                </tr>
+            </table>
+            <!--colour boxes to indicate whether the request is accepted,rejected or hold on-->
+            <div>
+            <div class="color-box table-success" style="float: left;"></div>
+            <p style="float: left;" class="mt-2 mr-4">Approved</p>
+            <div class="color-box table-warning" style="float:left"></div>
+            <p style="float: left;" class="mt-2 mr-4">OnHold</p>
+            <div class="color-box table-danger" style="float:left"></div>
+            <p style="float: left;" class="mt-2 mr-4">Rejected</p></div>
+            </div>
+
+    <script src="/js/employeeview.js"></script>
+</body>
+
+</html>
